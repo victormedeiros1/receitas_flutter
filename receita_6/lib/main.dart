@@ -144,11 +144,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData.dark(),
+        theme: ThemeData(primarySwatch: Colors.indigo),
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
-            title: const Text("Dicas"),
+            title: const Text("Receita 6"),
           ),
           body: ValueListenableBuilder(
               valueListenable: dataService.tableStateNotifier,
